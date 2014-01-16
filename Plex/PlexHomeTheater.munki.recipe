@@ -5,15 +5,15 @@
     <key>Description</key>
     <string>Downloads the latest PlexMediaServer and imports it into munki</string>
     <key>Identifier</key>
-    <string>com.github.uib.autopkg-recipes.munki.PlexMediaServer</string>
+    <string>com.github.uib.autopkg-recipes.munki.PlexHomeTheater</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Plex Media Server</string>
+        <string>Plex Home Theater</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/plex</string>
         <key>SPARKLE_FEED_URL</key>
-        <string>https://www.plexapp.com/appcast/mac/pms.xml</string>
+        <string>http://osx.iusethis.com/appcast/plexhometheater</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -21,9 +21,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Plex organizes all of your personal media, wherever you keep it, so you can enjoy it on any device.</string>
+            <string>Plex Home Theater bridges the gap between your computer and your home theater, doing so with a visually appealing user interface that provides instant access to your media. Download Plex Home Theater, and your television will thank you.</string>
             <key>display_name</key>
-            <string>Plex Media Server</string>
+            <string>Plex Home Theater</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
