@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the current release version of aPe for Mac and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.askilgl.autopkg.munki.aPe</string>
+    <string>com.github.uib.autopkg-recipes.munki.aPe</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>

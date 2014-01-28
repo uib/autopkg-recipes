@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the current release version of Kindle for Mac and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.askilgl.autopkg.munki.Kindle</string>
+    <string>com.github.uib.autopkg-recipes.munki.Kindle</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
