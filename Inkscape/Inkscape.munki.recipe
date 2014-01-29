@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>Description</key>
+        <string>Downloads the current version of ClustalX and imports into Munki.</string>
+        <key>Identifier</key>
+        <string>com.github.uib.autopkg-recipes.munki.Inkscape</string>
+        <key>Input</key>
+        <dict>
+                <key>NAME</key>
+                <string>Inkscape</string>
+                <key>MUNKI_REPO_SUBDIR</key>
+                <string>apps/inkscape</string>
+                <key>pkginfo</key>
+                <dict>
+                        <key>catalogs</key>
+                        <array>
+                                <string>testing</string>
+                        </array>
+                        <key>description</key>
+                        <string>Inkscape is professional quality vector graphics software which runs on Windows, Mac OS X and Linux. It is used by design professionals and hobbyists worldwide, for creating a wide variety of graphics such as illustrations, icons, logos, diagrams, maps and web graphics. Inkscape uses the W3C open standard SVG (Scalable Vector Graphics) as its native format, and is free and open-source software.</string>
+                        <key>display_name</key>
+                        <string>Inkscape</string>
+                        <key>name</key>
+                        <string>%NAME%</string>
+                        <key>unattended_install</key>
+                        <true/>
+                </dict>
+        </dict>
+        <key>MinimumVersion</key>
+        <string>0.2.9</string>
+        <key>ParentRecipe</key>
+        <string>github.uib.autopkg-recipes.download.Inkscape</string>
+        <key>Process</key>
+        <array>
+	<dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%DOWNLOAD_URL%</string>
+                <key>filename</key>
+                <string>%NAME%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+</dict>
+</plist>
