@@ -32,14 +32,10 @@
         <string>0.2.9</string>
         <key>ParentRecipe</key>
         <string>com.github.uib.autopkg-recipes.download.Inkscape</string>
-<<<<<<< HEAD
-     <key>Process</key>
+    <key>Process</key>
      <array>
-=======
-        <key>Process</key>
-        <array>
-	<dict>
-	    <key>Processor</key>
+        <dict>
+            <key>Processor</key>
             <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
@@ -49,12 +45,18 @@
                 <string>%NAME%.dmg</string>
             </dict>
         </dict>
->>>>>>> 60646a53797ce64651bcd6388c16279069316bf3
         <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
         </dict>
         <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
         </dict>
