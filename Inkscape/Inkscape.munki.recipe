@@ -30,33 +30,36 @@
         </dict>
         <key>MinimumVersion</key>
         <string>0.2.9</string>
-        <key>ParentRecipe</key>
-        <string>com.github.uib.autopkg-recipes.download.Inkscape</string>
+
     <key>Process</key>
      <array>
         <dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
-            <key>Arguments</key>
-            <dict>
-                <key>url</key>
-                <string>%DOWNLOAD_URL%</string>
-                <key>filename</key>
-                <string>%NAME%.dmg</string>
+                <key>Processor</key>
+                <string>URLTextSearcher</string>
+                <key>Arguments</key>
+                <dict>
+                    <key>url</key>
+                    <string>http://inkscape.org/en/download/</string>
+                    <key>re_pattern</key>
+                <string>(http://.*/Inkscape-[0-9\.].dmg)</string>
+                <key>result_output_var_name</key>
+                <string>url</string>
+                </dict>
             </dict>
-        </dict>
+                <dict>
+                        <key>Processor</key>
+                        <string>URLDownloader</string>
+                        <key>Arguments</key>
+                        <dict>
+                                <key>filename</key>
+                                <string>%NAME%.dmg</string>
+                        </dict>
+                </dict>
+                <dict>
+                        <key>Processor</key>
+                        <string>EndOfCheckPhase</string>
+                </dict>
         <dict>
-            <key>Processor</key>
-            <string>EndOfCheckPhase</string>
-        </dict>
-        <dict>
-            <key>Arguments</key>
-            <dict>
-                <key>pkg_path</key>
-                <string>%pathname%</string>
-                <key>repo_subdirectory</key>
-                <string>%MUNKI_REPO_SUBDIR%</string>
-            </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
         </dict>
