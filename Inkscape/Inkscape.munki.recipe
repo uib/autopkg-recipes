@@ -30,9 +30,6 @@
         </dict>
         <key>MinimumVersion</key>
         <string>0.2.9</string>
-        <key>ParentRecipe</key>
-        <string>com.github.uib.autopkg-recipes.download.Inkscape</string>
-        <key>Process</key>
         <array>
 	<dict>
 	    <dict>
