@@ -32,8 +32,24 @@
         <string>0.2.9</string>
         <key>ParentRecipe</key>
         <string>com.github.uib.autopkg-recipes.download.Inkscape</string>
+<<<<<<< HEAD
      <key>Process</key>
      <array>
+=======
+        <key>Process</key>
+        <array>
+	<dict>
+	    <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%DOWNLOAD_URL%</string>
+                <key>filename</key>
+                <string>%NAME%.dmg</string>
+            </dict>
+        </dict>
+>>>>>>> 60646a53797ce64651bcd6388c16279069316bf3
         <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
