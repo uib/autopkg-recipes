@@ -23,7 +23,7 @@
                     <key>url</key>
                     <string>http://www.clustal.org/download/current/</string>
                     <key>re_pattern</key>
-                <string>(clustalx-2.1-macosx.dmg)</string>
+                <string>http://www.clustal.org/download/current/COPYING</string>
                 <key>result_output_var_name</key>
                 <string>url</string>
                 </dict>
