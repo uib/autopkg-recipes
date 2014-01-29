@@ -32,7 +32,6 @@
         <string>0.2.9</string>
         <array>
 	<dict>
-	    <dict>
                 <key>Processor</key>
                 <string>URLTextSearcher</string>
                 <key>Arguments</key>
