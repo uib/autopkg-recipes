@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
         <key>Description</key>
-        <string>Downloads the current version of ClustalX and imports into Munki.</string>
+        <string>Downloads the current release version of Inkscape and imports into Munki.</string>
         <key>Identifier</key>
         <string>com.github.uib.autopkg-recipes.munki.Inkscape</string>
         <key>Input</key>
@@ -19,7 +19,7 @@
                                 <string>testing</string>
                         </array>
                         <key>description</key>
-                        <string>Inkscape is professional quality vector graphics software which runs on Windows, Mac OS X and Linux. It is used by design professionals and hobbyists worldwide, for creating a wide variety of graphics such as illustrations, icons, logos, diagrams, maps and web graphics. Inkscape uses the W3C open standard SVG (Scalable Vector Graphics) as its native format, and is free and open-source software.</string>
+                        <string>Vector imageing</string>
                         <key>display_name</key>
                         <string>Inkscape</string>
                         <key>name</key>
@@ -31,34 +31,17 @@
         <key>MinimumVersion</key>
         <string>0.2.9</string>
         <key>ParentRecipe</key>
-        <string>github.uib.autopkg-recipes.download.Inkscape</string>
-        <key>Process</key>
-        <array>
-	<dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
-            <key>Arguments</key>
-            <dict>
-                <key>url</key>
-                <string>%DOWNLOAD_URL%</string>
-                <key>filename</key>
-                <string>%NAME%.dmg</string>
-            </dict>
-        </dict>
+        <string>com.github.uib.autopkg-recipes.download.Inkscape</string>
+     <key>Process</key>
+     <array>
         <dict>
             <key>Processor</key>
             <string>EndOfCheckPhase</string>
         </dict>
         <dict>
-            <key>Arguments</key>
-            <dict>
-                <key>pkg_path</key>
-                <string>%pathname%</string>
-                <key>repo_subdirectory</key>
-                <string>%MUNKI_REPO_SUBDIR%</string>
-            </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
         </dict>
+    </array>
 </dict>
 </plist>
