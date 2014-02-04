@@ -22,8 +22,10 @@
                 <dict>
                     <key>url</key>
                     <string>http://inkscape.org/en/download/</string>
+                    <string>http://inkscape.org/en/download/mac-os</string>
                     <key>re_pattern</key>
                 <string>(http://.*/Inkscape-[0-9\.].dmg)</string>
+                <string>(http://.*/Inkscape-[0-9\.]+-1+-SNOWLEOPARD.dmg)</string>
                 <key>result_output_var_name</key>
                 <string>url</string>
                 </dict>
