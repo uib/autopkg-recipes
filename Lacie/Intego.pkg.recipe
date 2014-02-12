@@ -17,18 +17,6 @@
     <string>com.github.uib.autopkg-recipes.download.Intego</string>
     <key>Process</key>
     <array>
-        <dict>
-            <key>Comment</key>
-            <string>Get Intego Backup Assistant version from the pkg</string>
-            <key>Processor</key>
-            <string>Versioner</string>
-            <key>Arguments</key>
-            <dict>
-                <key>input_plist_path</key>
-                <string>%pathname%/Double Click to Install.app/Contents/Info.plist</string>
-                <key>plist_version_key</key>
-                <string>CFBundleVersion</string>
-            </dict>
         </dict>
         <dict>
             <key>Comment</key>
