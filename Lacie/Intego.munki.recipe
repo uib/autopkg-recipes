@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release of Lacie Intego backup software.</string>
+    <string>Downloads Intego Backup Assistant and imports into Munki.</string>
     <key>Identifier</key>
     <string>com.github.uib.autopkg-recipes.munki.Intego</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>intego</string>
+        <string>Intego</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/lacie</string>
-		<key>DOWNLOAD_URL</key>
-        <string>http://www.integodownload.com/mac/X/LaCie/IntegoBackupAssistant.dmg</string>
+        <key>MAKEPKGINFO_PKGNAME</key>
+        <string>Double Click to Install.app/Contents/Resources/Intego Backup Assistant.pkg</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -32,46 +32,10 @@
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.uib.autopkg-recipes.download.Intego</string>
     <key>Process</key>
-     <array>
-     	        <dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
-            <key>Arguments</key>
-            <dict>
-                <key>url</key>
-                <string>%DOWNLOAD_URL%</string>
-                <key>filename</key>
-                <string>%NAME%.dmg</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>MunkiPkginfoMerger</string>
-            <key>Arguments</key>
-            <dict>
-                <key>additional_pkginfo</key>
-                <dict>
-                    <key>installs</key>
-                    <array>
-                        <dict>
-                            <key>CFBundleIdentifier</key>
-                            <string>com.intego.BackupAssistant</string>
-                            <key>CFBundleName</key>
-                            <string>Intego Backup Assistant</string>
-                            <key>path</key>
-                            <string>/Applications/Intego Backup Assistant.app</string>
-                            <key>type</key>
-                            <string>file</string>
-                        </dict>
-                    </array>
-                </dict>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>EndOfCheckPhase</string>
-        </dict>
+    <array>
         <dict>
             <key>Arguments</key>
             <dict>
@@ -79,6 +43,8 @@
                 <string>%pathname%</string>
                 <key>repo_subdirectory</key>
                 <string>%MUNKI_REPO_SUBDIR%</string>
+                <key>munkiimport_pkgname</key>
+                <string>%MAKEPKGINFO_PKGNAME%</string>
             </dict>
             <key>Processor</key>
             <string>MunkiImporter</string>
