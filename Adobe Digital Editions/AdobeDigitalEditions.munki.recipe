@@ -35,7 +35,6 @@
     <key>Process</key>
     <array>
         <dict>
-            <key>Arguments</key>
             <key>Processor</key>
             <string>MunkiPkginfoMerger</string>
         </dict>
