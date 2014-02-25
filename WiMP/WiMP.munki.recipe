@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>WiMP</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/bettertouchtool</string>
+        <string>apps/wimp</string>
         <key>SPARKLE_FEED_URL</key>
         <string>http://client.wimpmusic.com/wimpsetup/desktop/update/wimp.update.osx.NO.xml</string>
         <key>pkginfo</key>
