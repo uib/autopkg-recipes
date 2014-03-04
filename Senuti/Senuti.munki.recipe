@@ -21,7 +21,7 @@
             <key>display_name</key>
             <string>Senuti</string>
     		<key>description</key>
-    		<string>Enables you to transfer songs from your iPod to your computer</string>
+    		<string>Enables you to transfer songs from your iPod to your computer. Free for 30 days or 1000 songs transferred</string>
     		<key>name</key>
     		<string>%NAME%</string>
     		<key>unattended_install</key>
