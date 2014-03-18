@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>Description</key>
+        <string>Downloads MrBayes and imports into Munki.</string>
+        <key>Input</key>
+        <dict>
+                <key>IDENTIFIER</key>
+                <string>com.github.uib.autopkg-recipes.munki.MrBayes</string>
+                <key>MUNKI_REPO_SUBDIR</key>
+                <string>apps/mrbayes</string>
+                <key>NAME</key>
+                <string>MrBayes</string>
+                <key>SOURCEFORGE_FILE_PATTERN</key>
+                <string>(?P&lt;url&gt;http.*?pkg)</string>
+                <key>SOURCEFORGE_PROJECT_ID</key>
+                <string>129302</string>
+                <key>pkginfo</key>
+                <dict>
+                        <key>catalogs</key>
+                        <array>
+                                <string>testing</string>
+                        </array>
+                        <key>description</key>
+                        <string>MrBayes is a program for the Bayesian estimation of phylogeny</string>
+                        <key>name</key>
+                        <string>%NAME%</string>
+                        <key>unattended_install</key>
+                        <true/>
+                </dict>
+        </dict>
+        <key>Process</key>
+        <array>
+                <dict>
+                        <key>Processor</key>
+                        <string>SourceForgeURLProvider</string>
+                </dict>
+                <dict>
+                        <key>Processor</key>
+                        <string>URLDownloader</string>
+                        <key>Arguments</key>
+                        <dict>
+                                <key>filename</key>
+                                <string>%NAME%.pkg</string>
+                        </dict>
+                </dict>
+                <dict>
+                        <key>Processor</key>
+                        <string>EndOfCheckPhase</string>
+                </dict>
+                <dict>
+                        <key>Arguments</key>
+                        <dict>
+                                <key>pkg_path</key>
+                                <string>%pathname%</string>
+                                <key>repo_subdirectory</key>
+                                <string>%MUNKI_REPO_SUBDIR%</string>
+                        </dict>
+                        <key>Processor</key>
+                        <string>MunkiImporter</string>
+                </dict>
+        </array>
+</dict>
+</plist>
