@@ -25,7 +25,7 @@
                         <key>description</key>
                         <string>MrBayes is a program for the Bayesian estimation of phylogeny</string>
                         <key>name</key>
-                        <string>%NAME%</string>
+                        <string>MrBayes</string>
                         <key>unattended_install</key>
                         <true/>
                 </dict>
