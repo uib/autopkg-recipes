@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the current release version of YouTube to MP3 Converter and imports into Munki.</string>
+    <key>Identifier</key>
+    <string>com.github.uib.autopkg-recipes.munki.YouTubetoMP3Converter</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>YouTube to mp3 Converter</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps/mediahuman</string>
+		<key>DOWNLOAD_URL</key>
+        <string>http://www.mediahuman.com/download/YouTubeToMP3.dmg</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>description</key>
+            <string>You like to listen to music on YouTube or Vimeo and want to save it for offline playing. Or you want to download soundtrack of a new movie. Then MediaHuman YouTube to MP3 Converter is the best choice for you.</string>
+            <key>display_name</key>
+            <string>YouTube to mp3 Converter</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true/>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.0</string>
+    <key>Process</key>
+    <array>
+		<dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%DOWNLOAD_URL%</string>
+                <key>filename</key>
+                <string>%NAME%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
