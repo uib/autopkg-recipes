@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/googlemusic</string>
+        <string>apps/radiantplayer</string>
         <key>NAME</key>
         <string>Radiant Player for Google Play Music</string>
     	<key>pkginfo</key>
