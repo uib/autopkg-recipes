@@ -13,7 +13,7 @@
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/macroplant</string>
 		<key>SPARKLE_FEED_URL</key>
-        <string>https://www.macroplant.com/iexplorer/ie3-appcast.xml</string>
+        <string>http://www.macroplant.com/iexplorer/ie3-appcast.xml</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
