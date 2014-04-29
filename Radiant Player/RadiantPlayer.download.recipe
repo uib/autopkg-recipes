@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version Google Music for Mac</string>
+	<string>Download the latest version of Radiant Player for Google Play Music</string>
 	<key>Identifier</key>
-	<string>com.github.uib.autopkg-recipes.download.GoogleMusic</string>
+	<string>com.github.uib.autopkg-recipes.download.RadiantPlayer</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Google Music for Mac</string>
+		<string>Radiant Player for Google Play Music</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.9</string>

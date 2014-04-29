@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Download the latest version of Google Music for Mac and imports it into Munki.</string>
+    <string>Download the latest version of Radiant Player for Google Play Music and imports it into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.uib.autopkg-recipes.munki.GoogleMusic</string>
+    <string>com.github.uib.autopkg-recipes.munki.RadiantPlayer</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/googlemusic</string>
         <key>NAME</key>
-        <string>Google Music for Mac</string>
+        <string>Radiant Player for Google Play Music</string>
     	<key>pkginfo</key>
     	<dict>
     		<key>catalogs</key>
@@ -19,11 +19,11 @@
     			<string>testing</string>
     		</array>
             <key>display_name</key>
-            <string>Google Music for Mac</string>
+            <string>Radiant Player for Google Play Music</string>
     		<key>description</key>
     		<string>Turn Google Music into a separate, beautiful application that integrates with your Mac.</string>
     		<key>name</key>
-    		<string>Google Music for Mac</string>
+    		<string>Radiant Player for Google Play Music</string>
     		<key>unattended_install</key>
     		<true/>
     	</dict>
@@ -31,7 +31,7 @@
     <key>MinimumVersion</key>
     <string>0.2.9</string>
     <key>ParentRecipe</key>
-    <string>com.github.uib.autopkg-recipes.download.GoogleMusic</string>
+    <string>com.github.uib.autopkg-recipes.download.RadiantPlayer</string>
     <key>Process</key>
     <array>
   	<dict>
