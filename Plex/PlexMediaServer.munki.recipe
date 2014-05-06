@@ -3,55 +3,38 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest PlexMediaServer and imports it into munki</string>
+    <string>Download the latest version of Plex Media Server and imports it into Munki.</string>
     <key>Identifier</key>
     <string>com.github.uib.autopkg-recipes.munki.PlexMediaServer</string>
     <key>Input</key>
     <dict>
-        <key>NAME</key>
-        <string>Plex Media Server</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/plex</string>
-        <key>SPARKLE_FEED_URL</key>
-        <string>https://www.plexapp.com/appcast/mac/pms.xml</string>
-        <key>pkginfo</key>
-        <dict>
-            <key>catalogs</key>
-            <array>
-                <string>testing</string>
-            </array>
-            <key>description</key>
-            <string>Plex organizes all of your personal media, wherever you keep it, so you can enjoy it on any device.</string>
+        <key>NAME</key>
+        <string>Plex Media Server</string>
+    	<key>pkginfo</key>
+    	<dict>
+    		<key>catalogs</key>
+    		<array>
+    			<string>testing</string>
+    		</array>
             <key>display_name</key>
             <string>Plex Media Server</string>
-            <key>name</key>
-            <string>%NAME%</string>
-            <key>unattended_install</key>
-            <true/>
-        </dict>
+    		<key>description</key>
+    		<string>Plex organizes all of your personal media, wherever you keep it, so you can enjoy it on any device.</string>
+    		<key>name</key>
+    		<string>%NAME%</string>
+    		<key>unattended_install</key>
+    		<true/>
+    	</dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>0.2.9</string>
+    <key>ParentRecipe</key>
+    <string>com.github.uib.autopkg-recipes.download.PlexMediaServer</string>
     <key>Process</key>
     <array>
-        <dict>
-            <key>Processor</key>
-            <string>SparkleUpdateInfoProvider</string>
-            <key>Arguments</key>
-            <dict>
-                <key>appcast_url</key>
-                <string>%SPARKLE_FEED_URL%</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>EndOfCheckPhase</string>
-        </dict>
-        <dict>
+ 	<dict>
             <key>Processor</key>
             <string>Unarchiver</string>
             <key>Arguments</key>
@@ -74,10 +57,6 @@
                 <key>dmg_path</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
             </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>MunkiPkginfoMerger</string>
         </dict>
         <dict>
             <key>Arguments</key>
