@@ -3,71 +3,39 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Download the latest version of Plex Media Server and imports it into Munki.</string>
+    <string>Downloads the lastest PlexMediaServer release</string>
     <key>Identifier</key>
-    <string>com.github.uib.autopkg-recipes.munki.PlexMediaServer</string>
+    <string>com.github.uib.autopkg-recipes.download.PlexMediaServer</string>
     <key>Input</key>
     <dict>
-        <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/plex</string>
         <key>NAME</key>
-        <string>Plex Media Server</string>
-    	<key>pkginfo</key>
-    	<dict>
-    		<key>catalogs</key>
-    		<array>
-    			<string>testing</string>
-    		</array>
-            <key>display_name</key>
-            <string>Plex Media Server</string>
-    		<key>description</key>
-    		<string>Plex organizes all of your personal media, wherever you keep it, so you can enjoy it on any device.</string>
-    		<key>name</key>
-    		<string>%NAME%</string>
-    		<key>unattended_install</key>
-    		<true/>
-    	</dict>
+        <string>PlexMediaServer</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.9</string>
-    <key>ParentRecipe</key>
-    <string>com.github.uib.autopkg-recipes.download.PlexMediaServer</string>
+    <string>0.2.0</string>
     <key>Process</key>
     <array>
- 	<dict>
+        <dict>
             <key>Processor</key>
-            <string>Unarchiver</string>
+            <string>SparkleUpdateInfoProvider</string>
             <key>Arguments</key>
             <dict>
-                <key>archive_path</key>
-                <string>%pathname%</string>
-                <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-                <key>purge_destination</key>
-                <true/>
+                <key>appcast_url</key>
+                <string>https://www.plexapp.com/appcast/mac/pms.xml</string>
             </dict>
         </dict>
         <dict>
             <key>Processor</key>
-            <string>DmgCreator</string>
+            <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
-                <key>dmg_root</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-                <key>dmg_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+                <key>filename</key>
+                <string>%NAME%.zip</string>
             </dict>
         </dict>
         <dict>
-            <key>Arguments</key>
-            <dict>
-                <key>pkg_path</key>
-                <string>%dmg_path%</string>
-                <key>repo_subdirectory</key>
-                <string>%MUNKI_REPO_SUBDIR%</string>
-            </dict>
             <key>Processor</key>
-            <string>MunkiImporter</string>
+            <string>EndOfCheckPhase</string>
         </dict>
     </array>
 </dict>
