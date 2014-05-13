@@ -13,7 +13,7 @@
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/celestialteapot</string>
         <key>SPARKLE_FEED_URL</key>
-        <string>http://fluidapp.com/appcast/fluidapp.rss</string>
+        <string>http://fluidapp.com/appcast/fluid1.rss</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
