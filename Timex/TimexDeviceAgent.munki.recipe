@@ -19,7 +19,7 @@
     			<string>testing</string>
     		</array>
             <key>display_name</key>
-            <string>TimexDevice Agent</string>
+            <string>Timex Device Agent</string>
     		<key>description</key>
     		<string>The Timex Device Agent connects your PC or Mac to your watch. This small but powerful application lets you easily download your watch data and even set all the watch settings!</string>
     		<key>name</key>
