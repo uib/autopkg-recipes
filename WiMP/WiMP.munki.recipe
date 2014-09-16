@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Music</string>
+            <key>developer</key>
+            <string>WiMP</string>
             <key>description</key>
             <string>WiMP er en musikktjeneste som inspirerer deg til å finne ny musikk og gamle favoritter. Med lokale redaksjoner i hvert land gir WiMP deg daglige tips, anbefalinger og spillelister for enhver anledning.</string>
             <key>display_name</key>

@@ -22,6 +22,10 @@
 			<array>
 				<string>testing</string>
 			</array>
+            <key>category</key>
+            <string>Developer Tools</string>
+            <key>developer</key>
+            <string>Mozilla</string>
 			<key>description</key>
 			<string>KompoZer is a wysiwyg HTML editor using the Mozilla Composer codebase.</string>
 			<key>name</key>

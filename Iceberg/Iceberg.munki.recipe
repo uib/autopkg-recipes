@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Developer Tools</string>
+            <key>developer</key>
+            <string>Stéphane Sudre</string>
             <key>description</key>
             <string>Iceberg is an Integrated Packaging Environment (IPE) that allows you to create packages or metapackages conforming to the Mac OS X specifications.</string>
             <key>display_name</key>

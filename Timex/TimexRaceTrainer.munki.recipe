@@ -17,7 +17,11 @@
     		<key>catalogs</key>
     		<array>
     			<string>testing</string>
-    		</array>
+    		</array>            
+    		<key>category</key>
+            <string>Health</string>
+            <key>developer</key>
+            <string>Timex</string>
             <key>display_name</key>
             <string>Timex Race Trainer</string>
     		<key>description</key>

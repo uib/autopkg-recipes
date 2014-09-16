@@ -19,7 +19,11 @@
             <key>catalogs</key>
             <array>
                 <string>testing</string>
-            </array>
+            </array>            
+            <key>category</key>
+            <string>Video</string>
+            <key>developer</key>
+            <string>MediaHuman</string>
             <key>description</key>
             <string>If you like to watch videos from YouTube, but you are bored ads and comments. Then MediaTube is a great solution that will make watching YouTube comfortable. With MediaTube you can conveniently and easily watch videos from YouTube, find your desired video using a built-in search. Or just open the URL.</string>
             <key>display_name</key>

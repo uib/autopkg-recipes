@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Video</string>
+            <key>developer</key>
+            <string>MediaHuman</string>
             <key>description</key>
             <string>You like to listen to music on YouTube or Vimeo and want to save it for offline playing. Or you want to download soundtrack of a new movie. Then MediaHuman YouTube to MP3 Converter is the best choice for you.</string>
             <key>display_name</key>

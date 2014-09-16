@@ -18,6 +18,10 @@
     		<array>
     			<string>testing</string>
     		</array>
+            <key>category</key>
+            <string>Health</string>
+            <key>developer</key>
+            <string>Timex</string>
             <key>display_name</key>
             <string>Timex Device Agent</string>
     		<key>description</key>

@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Productivity</string>
+            <key>developer</key>
+            <string>Circle Systems</string>
             <key>description</key>
             <string>Stat/Transfer has provided fast, reliable, and convenient data transfer between popular software packages for thousands of users, worldwide. A licencecode is needed to use this program.</string>
             <key>display_name</key>

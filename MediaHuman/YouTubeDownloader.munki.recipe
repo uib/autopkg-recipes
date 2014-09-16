@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Video</string>
+            <key>developer</key>
+            <string>MediaHuman</string>
             <key>description</key>
             <string>MediaHuman YouTube Downloader is a handy application for those who found a favorite music video or trailer of a new movie and wants to keep it on your computer for viewing offline. Or you need to save a video lesson. It is an ideal solution for such kind of tasks. You can download 20 videos for free before a license is needed.</string>
             <key>display_name</key>

@@ -18,6 +18,10 @@
     		<array>
     			<string>testing</string>
     		</array>
+            <key>category</key>
+            <string>Video</string>
+            <key>developer</key>
+            <string>Plex</string>
             <key>display_name</key>
             <string>Plex Home Theater</string>
     		<key>description</key>

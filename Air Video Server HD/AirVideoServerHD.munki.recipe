@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Utilities</string>
+            <key>developer</key>
+            <string>InMethod</string>
             <key>description</key>
             <string>Watch videos streamed instantly from your computer on your iPhone, iPad, iPod touch or Apple TV. No need to worry about converting or transferring files.</string>
             <key>display_name</key>

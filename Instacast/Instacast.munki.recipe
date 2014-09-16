@@ -18,6 +18,10 @@
     		<array>
     			<string>testing</string>
     		</array>
+            <key>category</key>
+            <string>Entertainment</string>
+            <key>developer</key>
+            <string>Vemedio</string>
             <key>display_name</key>
             <string>Instacast</string>
     		<key>description</key>

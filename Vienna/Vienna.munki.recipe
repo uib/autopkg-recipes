@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>News</string>
+            <key>developer</key>
+            <string>The Vienna RSS Project</string>
             <key>description</key>
             <string>Vienna is an RSS/Atom reader for Mac OS X. Vienna can connect directly to the websites you want to track. Additionally or alternatively, you can also sync with a server supporting the Open Reader API (an adaptation of the now deceased Google Reader API). Vienna has been successfully tested with BazQux.com and FeedHQ.org.</string>
             <key>display_name</key>

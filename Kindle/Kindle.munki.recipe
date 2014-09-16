@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Books</string>
+            <key>developer</key>
+            <string>Amazon.com</string>
             <key>description</key>
             <string>Read books on your computer with the Kindle reading app. No Kindle device required.</string>
             <key>display_name</key>

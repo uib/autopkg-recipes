@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Reference</string>
+            <key>developer</key>
+            <string>Mekentosj</string>
             <key>description</key>
             <string>Papers 3 helps you collect and curate the research material that you're passionate about. From citations to search, Papers will improve the way you find, organize, read, and cite. Papers is free to try for 30 days. After that one needs to buy a license.</string>
             <key>display_name</key>

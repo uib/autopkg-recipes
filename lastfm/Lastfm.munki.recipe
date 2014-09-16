@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Music</string>
+            <key>developer</key>
+            <string>Last.fm Ltd</string>
             <key>description</key>
             <string>Last.fm is a music recommendation service. You use Last.fm by signing up and downloading The Scrobbler, which helps you discover more music based on the songs you play.</string>
             <key>display_name</key>

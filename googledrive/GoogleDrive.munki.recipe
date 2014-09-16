@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Productivity</string>
+            <key>developer</key>
+            <string>Google Inc.</string>
             <key>description</key>
             <string>Google Drive is a free service that lets you store all your files including documents, photos, videos and Google Docs online and access them anywhere.</string>
             <key>display_name</key>

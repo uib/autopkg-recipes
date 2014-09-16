@@ -18,6 +18,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Productivity</string>
+            <key>developer</key>
+            <string>InkScape</string>
             <key>description</key>
             <string>Inkscape is a professional vector graphics editor for Windows, Mac OS X and Linux. It's free and open source.</string>
             <key>display_name</key>

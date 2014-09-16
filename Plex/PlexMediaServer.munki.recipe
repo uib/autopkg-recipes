@@ -19,7 +19,11 @@
             <key>catalogs</key>
             <array>
                 <string>testing</string>
-            </array>
+            </array>            
+            <key>category</key>
+            <string>Video</string>
+            <key>developer</key>
+            <string>Plex</string>
             <key>description</key>
             <string>Plex organizes all of your personal media, wherever you keep it, so you can enjoy it on any device.</string>
             <key>display_name</key>

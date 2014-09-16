@@ -18,6 +18,10 @@
     		<array>
     			<string>testing</string>
     		</array>
+            <key>category</key>
+            <string>Music</string>
+            <key>developer</key>
+            <string>Sajid Anwar</string>
             <key>display_name</key>
             <string>Radiant Player for Google Play Music</string>
     		<key>description</key>
