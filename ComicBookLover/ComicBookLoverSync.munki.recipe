@@ -20,6 +20,10 @@
             <array>
                 <string>testing</string>
             </array>
+            <key>category</key>
+            <string>Books</string>
+            <key>developer</key>
+            <string>BitCartel Software</string>
             <key>description</key>
             <string>ComicBookLoverSync helps you transfer comics from Mac OS X to iPhone / iPad.</string>
             <key>display_name</key>

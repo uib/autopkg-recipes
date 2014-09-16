@@ -20,11 +20,11 @@
             <array>
                 <string>testing</string>
             </array>
-            <key>description</key>
             <key>category</key>
             <string>Books</string>
             <key>developer</key>
             <string>BitCartel Software</string>
+            <key>description</key>
             <string>ComicBookLover for Mac OS X, enables comic fans to easily view, collect, and organise digital comics.</string>
             <key>display_name</key>
             <string>ComicBookLover</string>
