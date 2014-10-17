@@ -23,7 +23,7 @@
                 <key>url</key>
                 <string>https://www.realvnc.com/download/viewer/</string>
                 <key>re_pattern</key>
-                <string>(?P&lt;url&gt;http.*?macosx-x86_64.zip)</string>
+                <string>(?P&lt;url&gt;http.*?dmg)</string>
             </dict>
         </dict>
         <dict>
