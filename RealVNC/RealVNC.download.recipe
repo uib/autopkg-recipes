@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of Plex Home Theater</string>
+	<string>Downloads the latest version of RealVNC</string>
 	<key>Identifier</key>
-	<string>com.github.uib.autopkg-recipes.download.PlexHomeTheater</string>
+	<string>com.github.uib.autopkg-recipes.download.RealVNC</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>Plex Home Theater</string>
+		<string>RealVNC</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.9</string>
@@ -21,7 +21,7 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>https://plex.tv/downloads</string>
+                <string>https://www.realvnc.com/download/viewer/</string>
                 <key>re_pattern</key>
                 <string>(?P&lt;url&gt;http.*?macosx-x86_64.zip)</string>
             </dict>
