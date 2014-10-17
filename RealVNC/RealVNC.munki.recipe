@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Download the latest version of Plex Home Theater and imports it into Munki.</string>
+    <string>Download the latest version of RealVNC and imports it into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.uib.autopkg-recipes.munki.PlexHomeTheater</string>
+    <string>com.github.uib.autopkg-recipes.munki.RealVNC</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/plex</string>
+        <string>apps/realvnc</string>
         <key>NAME</key>
-        <string>Plex Home Theater</string>
+        <string>VNC Viewer</string>
     	<key>pkginfo</key>
     	<dict>
     		<key>catalogs</key>
@@ -19,13 +19,13 @@
     			<string>testing</string>
     		</array>
             <key>category</key>
-            <string>Video</string>
+            <string>Utilities</string>
             <key>developer</key>
-            <string>Plex</string>
+            <string>RealVNC</string>
             <key>display_name</key>
-            <string>Plex Home Theater</string>
+            <string>VNC Viewer</string>
     		<key>description</key>
-    		<string>For the ultimate experience, install Plex Home Theater on a dedicated computer for your TV. It's optimized for the big screen and supports a wide variety of formats with high-definition audio, native framerates, and more.</string>
+    		<string>VNC enables you to remotely access and control your devices wherever you are in the world, whenever you need to.</string>
     		<key>name</key>
     		<string>%NAME%</string>
     		<key>unattended_install</key>
@@ -35,33 +35,10 @@
     <key>MinimumVersion</key>
     <string>0.2.9</string>
     <key>ParentRecipe</key>
-    <string>com.github.uib.autopkg-recipes.download.PlexHomeTheater</string>
+    <string>com.github.uib.autopkg-recipes.download.RealVNC</string>
     <key>Process</key>
     <array>
  	<dict>
-            <key>Processor</key>
-            <string>Unarchiver</string>
-            <key>Arguments</key>
-            <dict>
-                <key>archive_path</key>
-                <string>%pathname%</string>
-                <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-                <key>purge_destination</key>
-                <true/>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>DmgCreator</string>
-            <key>Arguments</key>
-            <dict>
-                <key>dmg_root</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
-                <key>dmg_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
-            </dict>
-        </dict>
         <dict>
             <key>Arguments</key>
             <dict>
