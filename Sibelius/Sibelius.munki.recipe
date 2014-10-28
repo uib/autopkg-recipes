@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Download the latest version of Sibelius and imports it into Munki. This is the munki.recipe for hansen-ms download.recipe</string>
+    <key>Identifier</key>
+    <string>com.github.uib.autopkg-recipes.munki.Sibelius</string>
+    <key>Input</key>
+    <dict>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps/avid</string>
+        <key>NAME</key>
+        <string>Sibelius</string>
+    	<key>pkginfo</key>
+    	<dict>
+    		<key>catalogs</key>
+    		<array>
+    			<string>testing</string>
+    		</array>
+            <key>category</key>
+            <string>Music</string>
+            <key>developer</key>
+            <string>Avid</string>
+            <key>display_name</key>
+            <string>Sibelius</string>
+    		<key>description</key>
+    		<string>Sibelius is the world’s best-selling music notation software, trusted by top composers, publishers, and students alike. With Sibelius 7.5, you can express, accelerate, and promote your creativity in more ways than ever before, enabling you to deliver beautiful, professional scores faster and share audio and video versions of your work—with stunningly realistic musical phrasing—to make your talent stand out from the crowd. It’s the fastest, smartest, easiest way to write music for live performance, film and television, media entertainment, or in the classroom.</string>
+    		<key>name</key>
+    		<string>%NAME%</string>
+    		<key>unattended_install</key>
+    		<true/>
+    	</dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.9</string>
+    <key>ParentRecipe</key>
+    <string>com.github.hansen-m.download.Sibelius</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
