@@ -13,7 +13,7 @@
 		<key>NAME</key>
 		<string>KompoZer</string>
 		<key>SOURCEFORGE_FILE_PATTERN</key>
-		<string>kompozer-.*.en-US.mac-universal.dmg</string>
+		<string>(?P&lt;url&gt;http.*?pkg)</string>
 		<key>SOURCEFORGE_PROJECT_ID</key>
 		<string>170132</string>
 		<key>pkginfo</key>
