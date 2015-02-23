@@ -26,7 +26,7 @@
 				<string>%FILE_PATTERN%</string>
 			</dict>
 			<key>Processor</key>
-			<string>SourceForgeURLProvider</string>
+			<string>com.github.jessepeterson.munki.GrandPerspective/SourceForgeURLProvider</string>
 		</dict>
 		<dict>
 			<key>Processor</key>
