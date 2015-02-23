@@ -12,6 +12,8 @@
         <string>Inkscape</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/Inkscape</string>
+		<key>DOWNLOAD_URL</key>
+        <string>https://inkscape.org/en/gallery/item/3896/download/</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -33,11 +35,24 @@
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.9</string>
-    <key>ParentRecipe</key>
-    <string>com.github.uib.autopkg-recipes.download.Inkscape</string>
+    <string>0.2.0</string>
     <key>Process</key>
      <array>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%DOWNLOAD_URL%</string>
+                <key>filename</key>
+                <string>%NAME%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
         <dict>
             <key>Arguments</key>
             <dict>
