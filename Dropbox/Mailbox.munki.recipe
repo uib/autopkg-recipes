@@ -13,7 +13,7 @@
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/dropbox</string>
         <key>SPARKLE_FEED_URL</key>
-        <string>https://mb-dtop.s3.amazonaws.com/external-beta/external-beta-appcast.xml</string>
+        <string>https://rink.hockeyapp.net/api/2/apps/0de2e5766e01cde1f6c0fd5b9862c730</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
