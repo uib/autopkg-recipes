@@ -13,7 +13,7 @@
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/nucleobytes</string>
 		<key>DOWNLOAD_URL</key>
-        <string>http://nucleobytes.com/4peaks/download</string>
+        <string>http://downloads.nucleobytes.com/4peaks</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
