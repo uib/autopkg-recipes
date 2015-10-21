@@ -3,18 +3,16 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release version of Inkscape and imports into Munki.</string>
+    <string>Downloads the current release version of Inkscape and imports into Munki. This is the munki.recipe for hansen-ms download.recipe</string>
     <key>Identifier</key>
     <string>com.github.uib.autopkg-recipes.munki.Inkscape</string>
     <key>Input</key>
     <dict>
-        <key>NAME</key>
-        <string>Inkscape</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/Inkscape</string>
-		<key>DOWNLOAD_URL</key>
-        <string>https://inkscape.org/en/gallery/item/3896/download/</string>
-        <key>pkginfo</key>
+        <string>apps/inkscape</string>
+        <key>NAME</key>
+        <string>Sibelius</string>
+    	<key>pkginfo</key>
         <dict>
             <key>catalogs</key>
             <array>
@@ -35,24 +33,11 @@
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>0.2.9</string>
+    <key>ParentRecipe</key>
+    <string>com.github.hansen-m.download.Inkscape</string>
     <key>Process</key>
-     <array>
-        <dict>
-            <key>Processor</key>
-            <string>URLDownloader</string>
-            <key>Arguments</key>
-            <dict>
-                <key>url</key>
-                <string>%DOWNLOAD_URL%</string>
-                <key>filename</key>
-                <string>%NAME%.dmg</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>EndOfCheckPhase</string>
-        </dict>
+    <array>
         <dict>
             <key>Arguments</key>
             <dict>
