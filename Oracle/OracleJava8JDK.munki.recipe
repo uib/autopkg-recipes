@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Download the latest version of Oracle Java 8 JDK and imports it into Munki. This is the munki-recipe for hansen-ms download.recipe</string>
+    <key>Identifier</key>
+    <string>com.github.uib.autopkg-recipes.munki.OracleJava8JDK</string>
+    <key>Input</key>
+    <dict>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps/oracle</string>
+        <key>NAME</key>
+        <string>Java JDK 8</string>
+    	<key>pkginfo</key>
+    	<dict>
+    		<key>catalogs</key>
+    		<array>
+    			<string>testing</string>
+    		</array>
+            <key>category</key>
+            <string>Utilities</string>
+            <key>developer</key>
+            <string>Oracle</string>
+            <key>display_name</key>
+            <string>Oracle Java JDK 8</string>
+    		<key>description</key>
+    		<string></string>
+    		<key>name</key>
+    		<string>%NAME%</string>
+    		<key>unattended_install</key>
+    		<true/>
+    	</dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.9</string>
+    <key>ParentRecipe</key>
+    <string>com.github.hansen-m.download.OracleJava8JDK</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
