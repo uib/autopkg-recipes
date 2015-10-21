@@ -38,7 +38,7 @@
     <string>0.2.0</string>
     <key>Process</key>
     <array>
-        <dict>
+		<dict>
             <key>Processor</key>
             <string>URLDownloader</string>
             <key>Arguments</key>
@@ -51,15 +51,7 @@
         </dict>
         <dict>
             <key>Processor</key>
-            <string>URLDownloader</string>
-        </dict>
-        <dict>
-            <key>Processor</key>
             <string>EndOfCheckPhase</string>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>MunkiPkginfoMerger</string>
         </dict>
         <dict>
             <key>Arguments</key>
