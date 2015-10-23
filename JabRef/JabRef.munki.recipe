@@ -13,7 +13,7 @@
 		<key>NAME</key>
 		<string>JabRef</string>
 		<key>SOURCEFORGE_FILE_PATTERN</key>
-		<string>.*OSX.zip</string>
+		<string>JabRef-*OSX.zip</string>
 		<key>SOURCEFORGE_PROJECT_ID</key>
 		<string>92314</string>
 		<key>pkginfo</key>
