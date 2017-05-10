@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the current release version of EnzymeX and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.uib.autopkg-recipes.munki.4peaks</string>
+    <string>com.github.uib.autopkg-recipes.munki.EnzymeX</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
