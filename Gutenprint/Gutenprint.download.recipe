@@ -10,9 +10,9 @@
 	<dict>
 		<key>NAME</key>
 		<string>Git</string>
-		<key>FILE_PATTERN</key>
+		<key>SOURCEFORGE_FILE_PATTERN</key>
 		<string>.*\.dmg</string>
-		<key>SOURCEFORGE_PROJECT</key>
+		<key>SOURCEFORGE_PROJECT_NAME</key>
 		<string>gimp-print</string>
 	</dict>
 	<key>Process</key>
@@ -21,9 +21,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>project_name</key>
-				<string>%SOURCEFORGE_PROJECT%</string>
+				<string>%SOURCEFORGE_PROJECT_NAME%</string>
 				<key>match_pattern</key>
-				<string>%FILE_PATTERN%</string>
+				<string>%SOURCEFORGE_FILE_PATTERN%</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.jessepeterson.munki.GrandPerspective/SourceForgeURLProvider</string>
